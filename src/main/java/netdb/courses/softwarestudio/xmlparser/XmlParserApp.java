@@ -13,8 +13,7 @@ public class XmlParserApp {
 	public static void main(String[] args) throws Exception {
 		try {
 			XmlParser xps = new XmlParser(
-					new URL(
-							"http://shwu10.cs.nthu.edu.tw/2016-software-studio/lab8-xmlparser/raw/master/data/catalog.xml"));
+					new URL("http://shwu10.cs.nthu.edu.tw/2016-software-studio/lab8-xmlparser/raw/master/data/catalog.xml"));
 			XmlNode root = xps.xmlToTree();
 			XmlTree xmlTree = new XmlTree(root);
 			System.out.println(xmlTree);
